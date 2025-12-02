@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo pacman -S --noconfirm --needed flatpak
+yay -S --noconfirm --needed flatpak

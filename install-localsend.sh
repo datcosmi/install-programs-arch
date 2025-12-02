@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo pacman -S --noconfirm --needed localsend
+yay -S --noconfirm --needed localsend

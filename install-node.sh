@@ -1,22 +1,21 @@
-#!/bin/sh
+#!/bin/bash
 
-# Download and install nvm:
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+# Check if asdf is installed
+if ! command -v asdf &>/dev/null; then
+  echo "asdf is not installed. Please run ./install-asdf.sh first."
+  exit 1
+fi
 
-# in lieu of restarting the shell
-\. "$HOME/.nvm/nvm.sh"
+# Install nodejs build dependencies
+yay -S --noconfirm --needed base-devel openssl zlib
 
-# Download and install Node.js:
-nvm install 25
+# Install nodejs plugin for asdf if not already installed
+if ! asdf plugin list | grep -q nodejs; then
+  asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+fi
 
-# Verify the Node.js version:
-node -v # Should print "v25.2.1".
-
-# Install Corepack:
-npm install -g corepack
-
-# Download and install pnpm:
-corepack enable pnpm
-
-# Verify pnpm version:
-pnpm -v
+# Install latest LTS nodejs if no nodejs version is installed
+if ! asdf list nodejs &>/dev/null || [ -z "$(asdf list nodejs 2>/dev/null)" ]; then
+  asdf install nodejs latest:20
+  asdf set -u nodejs latest:20
+fi

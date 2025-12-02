@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo pacman -S --noconfirm --needed alacritty
+yay -S --noconfirm --needed alacritty

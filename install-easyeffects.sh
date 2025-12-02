@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo pacman -S --noconfirm --needed easyeffects
+yay -S --noconfirm --needed easyeffects
