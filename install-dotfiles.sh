@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ORIGINAL_DIR=$(pwd)
-REPO_URL="https://github.com/datcosmi/mydotfiles"
+REPO_URL="https://github.com/datcosmi/mydotfiles.git"
 REPO_NAME="mydotfiles"
 
 is_stow_installed() {
@@ -25,14 +25,22 @@ fi
 # Check if the clone was successful
 if [ $? -eq 0 ]; then
   echo "removing old configs"
-  rm -rf ~/.config/nvim ~/.config/starship.toml ~/.local/share/nvim/ ~/.cache/nvim/ ~/.config/ghostty/config
+  rm -rf ~/.config/nvim ~/.config/starship.toml ~/.local/share/nvim/ ~/.cache/nvim/ ~/.config/ghostty/config ~/.config/kitty ~/.config/alacritty ~/.config/swayosd ~/.config/elephant ~/.config/walker ~/.config/waybar ~/.config/hypr ~/.config/omarchy ~/.tmux.conf
 
   cd "$REPO_NAME"
-  stow zshrc
+  # stow zshrc
   stow ghostty
   stow tmux
   stow nvim
   stow starship
+  stow kitty
+  stow alacritty
+  stow swayosd
+  stow elephant
+  stow walker
+  stow waybar
+  stow hypr
+  stow omarchy
 else
   echo "Failed to clone the repository."
   exit 1
