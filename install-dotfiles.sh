@@ -25,7 +25,7 @@ fi
 # Check if the clone was successful
 if [ $? -eq 0 ]; then
   echo "removing old configs"
-  rm -rf ~/.config/nvim ~/.config/starship.toml ~/.local/share/nvim/ ~/.cache/nvim/ ~/.config/ghostty/config ~/.config/kitty ~/.config/alacritty ~/.config/swayosd ~/.config/elephant ~/.config/walker ~/.config/waybar ~/.config/hypr ~/.config/omarchy ~/.tmux.conf
+  rm -rf ~/.config/nvim ~/.config/starship.toml ~/.local/share/nvim/ ~/.cache/nvim/ ~/.config/ghostty/config ~/.config/kitty ~/.config/alacritty ~/.config/swayosd ~/.config/elephant ~/.config/walker ~/.config/waybar ~/.config/hypr ~/.config/omarchy ~/.tmux.conf ~/.config/fish
 
   cd "$REPO_NAME"
   # stow zshrc
@@ -41,6 +41,7 @@ if [ $? -eq 0 ]; then
   stow waybar
   stow hypr
   stow omarchy
+  stow fish
 else
   echo "Failed to clone the repository."
   exit 1

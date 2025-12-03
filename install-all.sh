@@ -126,6 +126,17 @@ run_script install-discord.sh
 run_script install-yazi.sh
 run_script install-steam.sh
 run_script install-docker.sh
+run-script install-eza.sh
+run-script install-starship.sh
+run-script install-lazyvim.sh
+run-script install-sway.sh
+run-script install-hypridle.sh
+run-script install-mako.sh
+run-script install-neofetch.sh
+run-script install-fzf.sh
+run-script install-telescope.sh
+run-script install-hyprlock.sh
+run-script install-rose-pine-cursor.sh
 # run_script install-hyprland.sh
 
 run_script install-dotfiles.sh
