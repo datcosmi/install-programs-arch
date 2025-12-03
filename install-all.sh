@@ -121,22 +121,22 @@ run_script install-localsend.sh
 run_script install-pulsemeeter.sh
 run_script install-easyeffects.sh
 run_script install-nvidia.sh
-run_script install-git.sh
+# run_script install-git.sh
 run_script install-discord.sh
 run_script install-yazi.sh
 run_script install-steam.sh
 run_script install-docker.sh
 run_script install-eza.sh
-run_script install-starship.sh
+# run_script install-starship.sh
 run_script install-lazyvim.sh
 run_script install-sway.sh
 run_script install-hypridle.sh
 run_script install-mako.sh
 run_script install-neofetch.sh
 run_script install-fzf.sh
-run_script install-telescope.sh
+# run_script install-telescope.sh
 run_script install-hyprlock.sh
-run_script install-rose-pine-cursor.sh
+# run_script install-rose-pine-cursor.sh
 # run_script install-hyprland.sh
 
 run_script install-dotfiles.sh

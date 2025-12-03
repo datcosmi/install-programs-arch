@@ -1,3 +1,3 @@
 #!/bin/sh
 
-yay -S --noconfirm --needed localsend-git
+yay -S --noconfirm --needed localsend-bin
