@@ -114,33 +114,37 @@ run_script install-fish.sh
 run_script install-proton.sh
 run_script install-flatpak.sh
 run_script install-ghostty.sh
+run_script install-kitty.sh
 run_script install-nvim.sh
-run_script install-alacritty.sh
+# run_script install-alacritty.sh
 run_script install-nautilus.sh
 run_script install-localsend.sh
 run_script install-pulsemeeter.sh
 run_script install-easyeffects.sh
-run_script install-nvidia.sh
+# run_script install-nvidia.sh
 # run_script install-git.sh
 run_script install-discord.sh
 run_script install-yazi.sh
 run_script install-steam.sh
 run_script install-docker.sh
 run_script install-eza.sh
-# run_script install-starship.sh
 run_script install-lazyvim.sh
-run_script install-sway.sh
+# run_script install-sway.sh
 run_script install-hypridle.sh
 run_script install-mako.sh
 run_script install-neofetch.sh
 run_script install-fzf.sh
 # run_script install-telescope.sh
 run_script install-hyprlock.sh
+run_script install-elephant.sh
+run_script install-tmux.sh
+run_script install-rofi.sh
 # run_script install-rose-pine-cursor.sh
 # run_script install-hyprland.sh
 
 run_script install-dotfiles.sh
 run_script set-shell.sh
+# run_script install-starship.sh
 
 #############################################
 #                FINISHED                   #
